@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.DrugGroupsEntity" table="drug_groups" schema="ak_db5">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="groupName">
+            <column name="group_name" sql-type="varchar(250)" length="250"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,49 @@
+Total time: 33h 0m
+Time spent:
+
+Done:
+    BuilderWindow:
+        Clickable Canvas
+        Grid
+        Adding Objects
+        Fit Objects
+        Connect Door
+        Move Lamp,RTV,Grid
+        Convert rooms to plan
+        Add Labels to Objects
+        Delete Lamp,RTV,Door (on right click)
+        Cascade Delete
+
+    ModeChooser:
+            GUI (2 Buttons + User & House Chooser)
+            Loading UserList
+
+    VisualWindow:
+            Load Plan
+            Convert Plan to Room Map
+            PowerUp Lamp
+            PowerUp RTV
+            Change Room according to temp and light
+            Make Person
+            Make Person Control with keyboard
+            Make Room-Wall Collider
+            Make door Closed/Open
+            Add Labels to Plan View
+            Make Humidity View
+            Add temp values and humidity values
+            Add temp/humid scale
+            Check if there is somebody in the room
+
+    Django:
+            Add Map model + serializator !
+
+
+To Do:
+
+    ModeChooser:
+        Loading UserList
+
+    VisualWindow:
+        *Implement Dimmable Light
+        *Change dude palette depending on light
+        (After) Timer scanning for changes

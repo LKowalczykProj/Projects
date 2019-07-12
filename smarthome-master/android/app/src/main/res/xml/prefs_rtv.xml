@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/prefs_general">
+        <EditTextPreference
+            android:key="pref_rtv_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_name" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_rtv_favourite"
+            android:title="@string/pref_favourite" />
+        <ListPreference android:key="pref_rtv_room"
+            android:title="@string/pref_room"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_rtv">
+        <!--not implemented on server yet-->
+        <!--<ListPreference android:key="pref_rtv_device_id"-->
+            <!--android:title="@string/pref_device_id"-->
+            <!--android:defaultValue="0" />-->
+    </PreferenceCategory>
+</PreferenceScreen>

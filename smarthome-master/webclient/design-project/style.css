@@ -1,0 +1,182 @@
+:root {
+    --bg-color: #fafafa;
+    --topnav-bg-color: #323232;
+    --topnav-text-color: #ffffff;
+    --topnav-hover-color: #b7b7b7;
+    --tile-bg-color: #ffffff;
+    --tile-text-color: #000000;
+    --tile-hover-color: #484848;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+    min-width: 1020px;
+    background-color: var(--bg-color);
+}
+
+.topnav {
+    width: 100%;
+    background-color: var(--topnav-bg-color);
+    color: var(--topnav-text-color);
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav ul {
+    list-style-type: none;
+    width: 1000px;
+    margin: auto;
+    padding: 0px;
+}
+
+.topnav li {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+}
+
+.topnav li a {
+    display: inline-block;
+    color: var(--topnav-text-color);
+    font-size: 14px;
+    padding: 15px 0px;
+    text-decoration: none;
+}
+
+.topnav li a.tp-icon {
+    font-size: 21px;
+    padding: 11px 0px;
+}
+
+.topnav li a:visited {
+    color: var(--topnav-text-color);
+}
+
+.topnav li a:hover {
+    color: var(--topnav-hover-color);
+}
+
+.column {
+    width: 1020px;
+    min-height: 50px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    color: var(--tile-text-color);
+}
+
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left {
+    width: 25%;
+    float: left;
+    margin: 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+.column-center {
+    width: 50%;
+    float: left;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.column-right {
+    width: 25%;
+    float: left;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.tile {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: var(--tile-bg-color);
+    border: 1px solid var(--topnav-bg-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tile a {
+    color: var(--tile-text-color);
+    text-decoration: none;
+}
+
+.tile a:visited {
+    color: var(--tile-text-color);
+}
+
+.tile a:hover {
+    color: var(--tile-hover-color);
+}
+
+.tile h1 {
+    padding: 0px;
+    margin: 0px 0px 16px;
+}
+
+.tile p {
+    padding: 0px;
+    margin: 0px 0px 8px;
+}
+
+.tile ul {
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px;
+}
+
+.tile li {
+    padding: 0px;
+    margin: 0px 0px 8px;
+}
+
+.tile button {
+    background-color: var(--tile-bg-color);
+    border: none;
+    font-size: 24px;
+    float: right;
+}
+
+.auth-form input {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 8px 8px;
+}
+
+.auth-form input[type=submit] {
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    border: none;
+    text-decoration: none;
+}
+
+.auth-form a {
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0px;
+    padding: 8px 8px;
+    border: none;
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    text-align: center;
+}
+
+.auth-form a:visited {
+    color: var(--topnav-text-color);
+}
+
+.auth-form a:hover {
+    color: var(--topnav-hover-color);
+}

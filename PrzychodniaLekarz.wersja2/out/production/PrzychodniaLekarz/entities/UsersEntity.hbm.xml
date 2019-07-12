@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.UsersEntity" table="users" schema="ak_db5">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="pesel">
+            <column name="pesel" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="firstName">
+            <column name="first_name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="lastName">
+            <column name="last_name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="userTypeId">
+            <column name="user_type_id" sql-type="int(11)"/>
+        </property>
+        <property name="adress">
+            <column name="adress" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

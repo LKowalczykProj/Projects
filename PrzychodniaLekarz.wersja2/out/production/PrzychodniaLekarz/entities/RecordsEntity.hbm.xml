@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.RecordsEntity" table="records" schema="ak_db5">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="record">
+            <column name="record" sql-type="text"/>
+        </property>
+        <property name="doctorId">
+            <column name="doctor_id" sql-type="int(11)"/>
+        </property>
+        <property name="patientId">
+            <column name="patient_id" sql-type="int(11)"/>
+        </property>
+        <property name="modifiedDate">
+            <column name="modified_date" sql-type="date"/>
+        </property>
+        <property name="imageId">
+            <column name="image_id" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
