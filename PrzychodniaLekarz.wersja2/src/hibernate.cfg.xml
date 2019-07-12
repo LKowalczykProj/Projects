@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://212.182.24.236:3306/ak_db5</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">ak_user5 </property>
+        <property name="connection.password">tyuiop</property>
+        <mapping resource="entities/DrugGroupsEntity.hbm.xml"/>
+        <mapping class="entities.DrugGroupsEntity"/>
+        <mapping resource="entities/DrugsEntity.hbm.xml"/>
+        <mapping class="entities.DrugsEntity"/>
+        <mapping resource="entities/ImagesEntity.hbm.xml"/>
+        <mapping class="entities.ImagesEntity"/>
+        <mapping resource="entities/RecordsEntity.hbm.xml"/>
+        <mapping class="entities.RecordsEntity"/>
+        <mapping class="entities.UserTypesEntity"/>
+        <mapping resource="entities/UserTypesEntity.hbm.xml"/>
+        <mapping class="entities.UsersEntity"/>
+        <mapping resource="entities/UsersEntity.hbm.xml"/>
+        <mapping resource="entities/VisitsEntity.hbm.xml"/>
+        <mapping class="entities.VisitsEntity"/>
+        <!--<property name="connection.username">ak_user5 </property>-->
+        <!--<property name="connection.password">tyuiop</property>-->
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

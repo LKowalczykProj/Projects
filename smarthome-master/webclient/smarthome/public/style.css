@@ -1,0 +1,564 @@
+:root {
+    --bg-color: #fafafa;
+    --topnav-bg-color: #323232;
+    --topnav-text-color: #ffffff;
+    --topnav-hover-color: #b7b7b7;
+    --tile-bg-color: #ffffff;
+    --tile-text-color: #000000;
+    --tile-hover-color: #484848;
+    --error-color: #ff0000;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+    min-width: 1024px;
+    background-color: var(--bg-color);
+}
+
+button {
+    cursor: pointer;
+    color: var(--tile-text-color);
+}
+
+button:focus, input:focus{
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--tile-bg-color);
+    color: var(--tile-text-color);
+}
+
+select {
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+    background-color: var(--tile-bg-color);
+    color: var(--tile-text-color);
+}
+
+p.error {
+    color: var(--error-color)
+}
+
+.topnav {
+    width: 100%;
+    background-color: var(--topnav-bg-color);
+    color: var(--topnav-text-color);
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav ul {
+    list-style-type: none;
+    width: 1004px;
+    margin: auto;
+    padding: 0px;
+}
+
+.topnav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.topnav li.more {
+    display: none;
+}
+
+.topnav li button {
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.topnav li button.tp-icon {
+    font-size: 21px;
+    padding: 11px 0px;
+}
+
+.topnav li button:hover {
+    color: var(--topnav-hover-color);
+}
+
+.column {
+    width: 1004px;
+    min-height: 50px;
+    margin: 0px auto 20px;
+    padding: 0px;
+    color: var(--tile-text-color);
+}
+
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left {
+    width: 231px;
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+    /*padding: 0px 10px 0px 0px;*/
+}
+
+.column-center {
+    width: 502px;
+    float: left;
+    /*margin: 0px;*/
+    margin: 0px 10px;
+    padding: 0px;
+    /*padding: 0px 10px;*/
+}
+
+.column-right {
+    width: 231px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    /*padding: 0px 0px 0px 10px;*/
+}
+
+.tile {
+    /*width: 1000px;*/
+    width: 100%;
+    /*margin: 20px 10px 0px;*/
+    margin: 20px 0px 0px;
+    /*padding: 20px;*/
+    padding: 4px 20px 10px;
+    background-color: var(--tile-bg-color);
+    border: 1px solid var(--topnav-bg-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item {
+    width: 482px;
+    /*width: 490px;*/
+    margin: 20px 10px 0px;
+    padding: 4px 20px 10px;
+    display: inline-block;
+}
+
+.message {
+    padding: 20px;
+    /*width: 100%;*/
+}
+
+.auto, .temperature {
+    margin: 20px 10px 0px;
+    width: 984px;
+}
+
+.empty {
+    width: 482px;
+    margin: 20px 10px 0px;
+}
+
+.lamp, .rtv {
+    min-height: 214px;
+}
+
+.room {
+    min-height: 166px;
+}
+
+.auth {
+    width: 482px;
+    margin: 20px auto;
+}
+
+.section h1 {
+    margin: 20px 0px 0px;
+}
+
+.tile > h1 {
+    margin: 0px;
+}
+
+.tile p {
+    padding: 0px;
+    margin: 0px 0px 8px;
+}
+
+.message p {
+    margin: 0px;
+}
+
+/*.tile ul {*/
+/*    padding: 0px 0px 0px 20px;*/
+/*    margin: 0px 0px;*/
+/*}*/
+
+/*.tile li {*/
+/*    padding: 0px;*/
+/*    margin: 0px 0px 8px;*/
+/*}*/
+
+.tile button {
+    background-color: var(--tile-bg-color);
+    border: none;
+    font-size: 24px;
+    float: right;
+}
+
+.actions ul {
+    padding: 0px;
+    margin: 8px 0px 0px 20px;
+}
+
+.actions button {
+    font-size: 16px;
+    text-align: left;
+    float: none;
+    padding: 4px 0px;
+}
+
+.actions button:hover {
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    position: relative;
+}
+
+.header-content {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.header h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.buttons {
+    margin: 0px;
+    padding: 0px;
+    width: 90px;
+    float: right;
+}
+
+.buttons button {
+    width: 30%;
+    margin: 0px;
+    padding: 6px 0px;
+}
+
+.tile button.toggle-button {
+    font-size: 36px;
+    color: var(--topnav-bg-color);
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+.tile input[type=range] {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    appearance: none;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    background: var(--topnav-hover-color);
+    outline: none;
+}
+
+.tile input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--topnav-bg-color);
+    cursor: pointer;
+}
+
+.tile input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--topnav-bg-color);
+    cursor: pointer;
+}
+
+.tile input[type=number] {
+    margin: 5px;
+    padding: 2px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid var(--topnav-hover-color);
+    border-radius: 2px;
+}
+
+.tile input[type=number]:focus {
+    border: 2px solid var(--topnav-bg-color);
+}
+
+.tile input[type=checkbox] {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    /*margin: 5px;*/
+    padding: 2px;
+    background-color: var(--tile-bg-color);
+    border: 2px solid var(--topnav-hover-color);
+    border-radius: 2px;
+}
+
+.parameter input[type=text] {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 200px;
+    /*margin: 4px;*/
+    padding: 4px 4px;
+    border: 2px solid var(--topnav-hover-color);
+    border-radius: 2px;
+}
+
+.parameter input[type=text]:focus {
+    border: 2px solid var(--topnav-bg-color);
+}
+
+.parameter select {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 200px;
+    /*margin: 4px;*/
+    padding: 4px 4px;
+    border: 2px solid var(--topnav-hover-color);
+    border-radius: 2px;
+}
+
+.settings input[type=submit], .settings button {
+    font-size: 14px;
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    float: none;
+    width: 33%;
+    margin: 0px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parameter {
+    width: 100%;
+    height: 46px;
+    position: relative;
+    border-top: 1px solid var(--topnav-bg-color);
+}
+
+.parameter p {
+    margin: 0px;
+    display: inline-block;
+}
+
+.parameter > p {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.tight {
+    border: none;
+    height: 30px;
+}
+
+.parameter label {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.auth h1 {
+    margin: 0px 0px 16px;
+}
+
+.auth button {
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    float: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px 0px;
+}
+
+.auth-form input {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 8px 8px;
+    border: 2px solid var(--topnav-hover-color);
+    border-radius: 2px;
+}
+
+.auth-form input:focus {
+    border: 2px solid var(--topnav-bg-color);
+}
+
+.auth-form input[type=submit] {
+    color: var(--topnav-text-color);
+    background-color: var(--topnav-bg-color);
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    body {
+        min-width: 320px;
+    }
+
+    .topnav ul {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        padding: 0px 20px 20px;
+        margin: 0px;
+    }
+
+    .tile, .item, .auth {
+        width: 100%;
+        min-width: 298px;
+        margin: 20px 0px 0px;
+        display: block;
+    }
+
+    .column-left, .column-center, .column-right {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .topnav li:not(:first-child) {
+        display: none;
+    }
+
+    .topnav li.more {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive li:not(:last-child) button {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .topnav.responsive li:first-child button {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .topnav.responsive li.more {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 16.6%;
+    }
+
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .topnav.responsive li:first-child {
+        width: 16.6%;
+    }
+
+    .column {
+        padding: 0px 10px 10px;
+    }
+
+    .section > h1 {
+        margin: 10px 0px 0px;
+    }
+
+    .tile {
+        margin-top: 10px;
+    }
+
+    .double {
+        height: 92px;
+    }
+
+    .double label, .double > p {
+        position: absolute;
+        top: 33%;
+    }
+
+    .double input[type=range], .double input[type=text], .double select {
+        width: 100%;
+        position: absolute;
+        top: 66%;
+    }
+
+
+}

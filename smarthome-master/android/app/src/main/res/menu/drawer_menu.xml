@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_home"
+            android:title="@string/label_home_screen"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_rooms"
+            android:title="@string/label_rooms"
+            android:icon="@drawable/ic_door"/>
+        <item android:id="@+id/nav_devices"
+            android:title="@string/label_devices"
+            android:icon="@drawable/ic_device"/>
+        <!--<item android:id="@+id/nav_settings"-->
+            <!--android:title="@string/label_settings"-->
+            <!--android:icon="@drawable/ic_settings"/>-->
+    </group>
+    <group>
+        <item android:id="@+id/nav_logout"
+            android:title="@string/label_logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>
