@@ -1,0 +1,7 @@
+This project was made by group of 5 people:
+
+Anna Sabuć - Android (Ekran logowania, ekran urządzeń)
+Łukasz Kowalczyk - Serwer, Symulator (budowa programu)
+Łukasz Zając - Kontroler, Symulator(komunikacja z serwerem), Android(ekran ustawień, komunikacja z serwerem)
+Marian Perun - Android(ekran główny)
+Wojciech Kryczka - Strona Internetowa
